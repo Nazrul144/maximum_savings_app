@@ -1,3 +1,4 @@
+'use client';
 import { BookOpenIcon, InfoIcon, LifeBuoyIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -15,8 +16,11 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-// Define your navItems array
+// All routes and submenus here:
+
+
 const navItems = [
   { 
     title: "Home",
@@ -30,7 +34,7 @@ const navItems = [
   {
     title: "Discover Savings",
     items: [
-      { title: "Fashion", path: "fashion" },
+      { title: "Fashion", path: "/fashion" },
       { title: "Travels", path: "/travels" },
       { title: "Home & Lifestyle", path: "/lifestyle" },
       { title: "Finance", path: "/finance" },
@@ -38,10 +42,14 @@ const navItems = [
   },
   { title: "About Us", path: "/about" },
   { title: "Add Your Business", path: "/business" },
-  { title: "FAQS", path: "faqs" },
+  { title: "FAQS", path: "/faqs" },
 ];
 
 export default function Navbar({ montserrat }) {
+
+  const patheName = usePathname();
+
+
   return (
     <header className="border-b px-4 md:px-6 sticky top-0 z-50">
       <div className="flex h-16 items-center justify-between gap-4 lg:px-16">
@@ -96,9 +104,7 @@ export default function Navbar({ montserrat }) {
                             <NavigationMenuList className="flex flex-col">
                               {item.items.map((submenu, subIndex) => (
                                 <NavigationMenuItem key={subIndex}>
-                                  <NavigationMenuLink href={submenu.path}>
-                                    {submenu.title}
-                                  </NavigationMenuLink>
+                                  <Link href={submenu.path} key={submenu.path}>{submenu.title}</Link>
                                 </NavigationMenuItem>
                               ))}
                             </NavigationMenuList>
@@ -106,7 +112,7 @@ export default function Navbar({ montserrat }) {
                         </Popover>
                       ) : (
                         <NavigationMenuLink >
-                          <Link href={item.path} className={`${cn(montserrat)}`}>
+                          <Link className={`${cn(montserrat)} ${item.path === patheName? 'text-[#00308F] font-bold underline' : ""}`} href={item.path} key={item.path}>
                             {item.title}
                           </Link>
                         </NavigationMenuLink>
@@ -114,7 +120,7 @@ export default function Navbar({ montserrat }) {
                     </NavigationMenuItem>
                   ))
                 }
-                
+
                 </NavigationMenuList>
 
               </NavigationMenu>
@@ -142,9 +148,7 @@ export default function Navbar({ montserrat }) {
                             <NavigationMenuList className="flex flex-col">
                               {item.items.map((submenu, subIndex) => (
                                 <NavigationMenuItem key={subIndex}>
-                                  <NavigationMenuLink href={submenu.path}>
-                                    {submenu.title}
-                                  </NavigationMenuLink>
+                                  <Link href={submenu.path} key={submenu.path}>{submenu.title}</Link>
                                 </NavigationMenuItem>
                               ))}
                             </NavigationMenuList>
@@ -152,7 +156,7 @@ export default function Navbar({ montserrat }) {
                         </Popover>
                       ) : (
                         <NavigationMenuLink >
-                          <Link href={item.path} className={`${cn(montserrat)}`}>
+                          <Link className={`${cn(montserrat)} ${item.path === patheName? 'text-[#00308F] font-bold underline' : ""}`} href={item.path} key={item.path}>
                             {item.title}
                           </Link>
                         </NavigationMenuLink>
