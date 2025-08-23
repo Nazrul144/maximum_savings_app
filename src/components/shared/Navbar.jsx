@@ -105,14 +105,18 @@ export default function Navbar({ montserrat }) {
                           </PopoverContent>
                         </Popover>
                       ) : (
-                        <NavigationMenuLink href={item.path}>
-                          {item.title}
+                        <NavigationMenuLink >
+                          <Link href={item.path} className={`${cn(montserrat)}`}>
+                            {item.title}
+                          </Link>
                         </NavigationMenuLink>
                       )}
                     </NavigationMenuItem>
                   ))
                 }
+                
                 </NavigationMenuList>
+
               </NavigationMenu>
             </PopoverContent>
           </Popover>
