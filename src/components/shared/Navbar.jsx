@@ -15,6 +15,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import Link from "next/link"
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
@@ -223,11 +224,11 @@ export default function Navbar() {
         </div>
         {/* Right side */}
         <div className="flex items-center gap-2">
-          <Button asChild variant="ghost" size="sm" className="text-sm">
-            <a href="#">Sign In</a>
+          <Button asChild variant="ghost" size="sm" className=" common-text border-2 border-gray-200 px-6 py-5 font-semibold text-lg">
+            <Link href={"#"}>Log in</Link>
           </Button>
-          <Button asChild size="sm" className="text-sm">
-            <a href="#">Get Started</a>
+          <Button asChild size="sm" className="font-semibold common-bg px-6 py-5 text-lg">
+            <Link href={"#"}>Sign Up</Link>
           </Button>
         </div>
       </div>
