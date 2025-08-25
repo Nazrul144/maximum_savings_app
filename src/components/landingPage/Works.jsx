@@ -2,7 +2,7 @@ import React from 'react'
 import { ClipboardList, Smartphone, Wallet } from "lucide-react"; // icons
 const Works = () => {
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="mb-10 mt-10 bg-white text-center">
     {/* Title */}
     <h2 className="text-4xl font-bold common-text mb-2 inter-text">How It Works</h2>
     <p className=" text-xl mb-12 montserrat-text ">
