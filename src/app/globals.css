@@ -9,6 +9,9 @@
 .inter-text {
   font-family: 'Inter', sans-serif;
 }
+.montserrat-text {
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 @custom-variant dark (&:is(.dark *));
