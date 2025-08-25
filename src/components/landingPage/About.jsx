@@ -38,7 +38,7 @@ const About = () => {
             <div className="text-center">
               <h4 className="common-text font-bold text-4xl inter-text">100K+</h4>
               <p className="text-gray-600 text-sm">Happy Members</p>
-              <div class="w-[2px] h-24 common-bg top-3 left-80 absolute"></div> 
+              <div className="w-[2px] h-24 common-bg top-3 left-80 absolute"></div> 
             </div>
             <div className="text-center">
               <div className='flex justify-center items-center'>

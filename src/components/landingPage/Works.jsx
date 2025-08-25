@@ -12,7 +12,7 @@ const Works = () => {
     {/* Steps */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
       {/* Step 01 */}
-      <div className="relative bg-white shadow-md rounded-xl p-8 text-center  hover:shadow-lg transition border-3 border-b-[#00308F]">
+      <div className="relative bg-white shadow-md rounded-xl p-8 text-center  hover:shadow-lg transition border border-blue-900 border-b-4  border-b-[#00308F] ">
         {/* Circle Number */}
         <div className="absolute -top-6 left-20 -translate-x-1/2 w-12 h-12 rounded-full common-bg text-white flex items-center justify-center font-bold">
           01
@@ -29,7 +29,7 @@ const Works = () => {
       </div>
 
       {/* Step 02 */}
-      <div className="relative bg-white shadow-md rounded-xl p-8 text-center hover:shadow-lg transition border-3 border-b-[#00308F]">
+      <div className="relative bg-white shadow-md rounded-xl p-8 border border-blue-900 border-b-4 text-center hover:shadow-lg transition border-b-[#00308F]">
         <div className="absolute -top-6 left-20 -translate-x-1/2 w-12 h-12 rounded-full common-bg text-white flex items-center justify-center font-bold">
           02
         </div>
@@ -44,7 +44,7 @@ const Works = () => {
       </div>
 
       {/* Step 03 */}
-      <div className="relative bg-white shadow-md rounded-xl p-8 text-center border hover:shadow-lg transition border-3 border-b-[#00308F]">
+      <div className="relative bg-white shadow-md rounded-xl p-8 border border-blue-900 border-b-4 text-center  hover:shadow-lg transition  border-b-[#00308F]">
         <div className="absolute -top-6 left-20 -translate-x-1/2 w-12 h-12 rounded-full common-bg text-white flex items-center justify-center font-bold">
           03
         </div>
