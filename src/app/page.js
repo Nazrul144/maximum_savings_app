@@ -1,9 +1,9 @@
-
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      main page
+      <h1 className="text-2xl font-bold">Welcome to Maximum Savings</h1>
     </div>
   );
 }

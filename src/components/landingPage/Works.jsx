@@ -1,0 +1,65 @@
+import React from 'react'
+import { ClipboardList, Smartphone, Wallet } from "lucide-react"; // icons
+const Works = () => {
+  return (
+    <section className="py-16 bg-white text-center">
+    {/* Title */}
+    <h2 className="text-3xl font-bold text-blue-900 mb-2">How It Works</h2>
+    <p className="text-gray-600 mb-12">
+      Follow three easy steps to get your card and unlock exclusive discounts.
+    </p>
+
+    {/* Steps */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      {/* Step 01 */}
+      <div className="relative bg-white shadow-md rounded-xl p-8 text-center border hover:shadow-lg transition">
+        {/* Circle Number */}
+        <div className="absolute -top-6 left-20 -translate-x-1/2 w-12 h-12 rounded-full bg-blue-900 text-white flex items-center justify-center font-bold">
+          01
+        </div>
+        {/* Icon */}
+        <ClipboardList className="w-10 h-10 mx-auto text-blue-900 mb-4" />
+        <h3 className="font-bold text-lg text-blue-900 mb-2">
+          Step 01: Sign Up
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Register online in minutes. Just provide basic information and proof
+          of eligibility like a work ID or employment letter.
+        </p>
+      </div>
+
+      {/* Step 02 */}
+      <div className="relative bg-white shadow-md rounded-xl p-8 text-center border hover:shadow-lg transition">
+        <div className="absolute -top-6 left-20 -translate-x-1/2 w-12 h-12 rounded-full bg-blue-900 text-white flex items-center justify-center font-bold">
+          02
+        </div>
+        <Smartphone className="w-10 h-10 mx-auto text-blue-900 mb-4" />
+        <h3 className="font-bold text-lg text-blue-900 mb-2">
+          Step 02: Get Verified
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Once you upload your documents, our team will verify your
+          eligibility. This usually takes 1–3 working days.
+        </p>
+      </div>
+
+      {/* Step 03 */}
+      <div className="relative bg-white shadow-md rounded-xl p-8 text-center border hover:shadow-lg transition">
+        <div className="absolute -top-6 left-20 -translate-x-1/2 w-12 h-12 rounded-full bg-blue-900 text-white flex items-center justify-center font-bold">
+          03
+        </div>
+        <Wallet className="w-10 h-10 mx-auto text-blue-900 mb-4" />
+        <h3 className="font-bold text-lg text-blue-900 mb-2">
+          Step 03: Start Saving
+        </h3>
+        <p className="text-gray-600 text-sm">
+          After verification, activate your card and instantly access
+          thousands of exclusive discounts both online and in-store.
+        </p>
+      </div>
+    </div>
+  </section>
+  )
+}
+
+export default Works
