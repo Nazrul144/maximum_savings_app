@@ -5,14 +5,14 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <div>
+    <div className='max-w-7xl w-full mx-auto'>
         <h1 className=' text-2xl px-2 lg:text-5xl text-center font-extrabold mt-4 inter-text'>Unlock Over <span className='common-text'>15,000 Discounts</span> for Public Sector <br />Workers.</h1>
         <p className='text-center mt-4 text-sm poppins-text'>Access exclusive deals from top brands in retail, travel, and entertainment</p>
         <div className='flex justify-center items-center mt-4'>
         <Button className='cursor-pointer hover:bg-common-bg hover:scale-105 transition-all duration-300 common-bg px-4 text-lg font-semibold'>Get Started <BsRocketTakeoffFill /></Button>
         </div>
         <div className="flex justify-center items-center mt-6 bg-white">
-      <div className="grid grid-cols-5 gap-3 max-w-7xl w-full px-2">
+      <div className="grid grid-cols-5 gap-3 px-2">
         {/* Left tall ship */}
         <div className="row-span-1">
           <Image

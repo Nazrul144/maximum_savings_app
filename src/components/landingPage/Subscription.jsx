@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 
 const Subscription = () => {
   return (
-    <div className='mt-10 mb-10'>
+    <div className='mt-10 mb-10 max-w-7xl mx-auto'>
       <h1 className='text-center text-4xl inter-text common-text mb-4 font-bold'>Choose Your Membership</h1>
       <p className='text-center text-xl montserrat-text '>Join thousands of members enjoying exclusive deals and perks. Pick <br /> the plan that's right for you.</p>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { ClipboardList, Smartphone, Wallet } from "lucide-react"; // icons
 const Works = () => {
   return (
-    <section className="mb-10 mt-10 bg-white text-center">
+    <section className="mb-10 mt-10 bg-white text-center max-w-7xl mx-auto">
     {/* Title */}
     <h2 className="text-4xl font-bold common-text mb-2 inter-text">How It Works</h2>
     <p className=" text-xl mb-12 montserrat-text ">
@@ -10,7 +10,7 @@ const Works = () => {
     </p>
 
     {/* Steps */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8  px-6">
       {/* Step 01 */}
       <div className="relative bg-white shadow-md rounded-xl p-8 text-center  hover:shadow-lg transition border border-blue-900 border-b-4  border-b-[#00308F] ">
         {/* Circle Number */}
