@@ -12,6 +12,10 @@
 .montserrat-text {
   font-family: 'Montserrat', sans-serif;
 }
+.poppins-text {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 
 @custom-variant dark (&:is(.dark *));

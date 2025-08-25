@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
         <h1 className='text-5xl text-center font-extrabold mt-4 inter-text'>Unlock Over <span className='common-text'>15,000 Discounts</span> for Public Sector <br />Workers.</h1>
-        <p className='text-center mt-4'>Access exclusive deals from top brands in retail, travel, and entertainment</p>
+        <p className='text-center mt-4 text-sm poppins-text'>Access exclusive deals from top brands in retail, travel, and entertainment</p>
         <div className='flex justify-center items-center mt-4'>
         <Button className='common-bg text-xl px-4  font-semibold'>Get Started <BsRocketTakeoffFill /></Button>
         </div>
