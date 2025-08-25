@@ -12,105 +12,110 @@ const Header = () => {
         <Button className='common-bg text-xl px-4  font-semibold'>Get Started <BsRocketTakeoffFill /></Button>
         </div>
         <div className="flex justify-center items-center mt-6 bg-white">
-      <div className="grid grid-cols-5 gap-3 max-w-5xl w-full px-2">
+      <div className="grid grid-cols-5 gap-3 max-w-7xl w-full px-2">
         {/* Left tall ship */}
-        <div className="row-span-2">
+        <div className="row-span-1">
           <Image
-            src="/header/1.jpg"
+            src="/header/7.jpg"
             alt="ship-left"
-            width={200}
+            width={1000}
             height={300}
-            className="w-full h-[250px] object-cover rounded-md"
+            className="w-60 h-80 object-cover "
           />
         </div>
 
         {/* Protest */}
-        <div className="row-span-1">
+        <div className="row-span-1 mt-12">
           <Image
-            src="/header/2.jpg"
+            src="/header/3.jpg"
             alt="protest"
-            width={200}
-            height={150}
-            className="w-full h-[180px] object-cover rounded-md"
+            width={1000}
+            height={500}
+            className="w-96 h-66 object-cover"
           />
         </div>
 
         {/* Flag (center large, fill extra space) */}
-        <div className="row-span-2 col-span-1">
+        <div className="row-span-2 col-span-1 mt-24">
           <Image
-            src="/header/3.jpg"
+            src="/header/5.jpg"
             alt="flag"
-            width={250}
-            height={250}
-            className="w-full h-[250px] object-cover rounded-md"
+            width={500}
+            height={400}
+            className="w-60 h-80 object-cover "
           />
         </div>
 
         {/* Right tall ship */}
         <div className="row-span-2">
           <Image
-            src="/header/6.jpg"
+            src="/header/7.jpg"
             alt="ship-right"
-            width={200}
+            width={400}
             height={300}
-            className="w-full h-[250px] object-cover rounded-md"
+            className="w-60 h-70 object-cover "
           />
         </div>
 
         {/* Blue building */}
         <div className="row-span-1">
           <Image
-            src="/header/7.jpg"
+            src="/header/4.jpg"
             alt="blue-building"
-            width={200}
-            height={150}
-            className="w-full h-[180px] object-cover rounded-md"
+            width={400}
+            height={600}
+            className="w-60 h-86 object-cover "
           />
         </div>
 
         {/* Building with flags */}
-        <div className="row-span-1">
+        <div className="row-span-1 ml-18">
           <Image
-            src="/header/4.jpg"
+            src="/header/2.jpg"
             alt="building-flags"
             width={200}
             height={150}
-            className="w-full h-[180px] object-cover rounded-md"
+            className="w-40 h-66 object-cover hidden md:block"
           />
         </div>
 
         {/* Blue interior */}
         <div className="row-span-1">
           <Image
-            src="/header/5.jpg"
+            src="/header/6.jpg"
             alt="blue-interior"
             width={200}
             height={150}
-            className="w-full h-[180px] object-cover rounded-md"
+            className="w-66 h-50 object-cover hidden md:block"
           />
         </div>
 
-        {/* Buckingham Palace */}
-        <div className="row-span-1">
+      <div className='flex gap-3 w-96 absolute right-108 top-172 '>
+          {/* Buckingham Palace */}
+        <div className='w-36'>
           <Image
-            src="/header/8.jpg"
+            src="/header/1.jpg"
             alt="palace"
             width={200}
             height={150}
-            className="w-full h-[180px] object-cover rounded-md"
+            className="w-full h-50 object-cover hidden md:block"
           />
         </div>
 
         {/* Woman in car */}
-        <div className="row-span-1">
+        <div className="w-56">
           <Image
             src="/header/9.jpg"
             alt="woman-car"
             width={200}
             height={150}
-            className="w-full h-[180px] object-cover rounded-md"
+            className=" w-full h-46 object-cover hidden md:block"
           />
         </div>
+      </div>
+
+
+
       </div>
     </div>
     </div>

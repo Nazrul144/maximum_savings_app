@@ -1,9 +1,14 @@
-import Image from "next/image";
+import About from "@/components/LandingPage/About";
+import Header from "@/components/LandingPage/Header";
+import Works from "@/components/LandingPage/Works";
+
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-2xl font-bold">Welcome to Maximum Savings</h1>
+      <Header/>
+      <Works/>
+      <About/>
     </div>
   );
 }
