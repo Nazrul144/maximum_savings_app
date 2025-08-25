@@ -29,11 +29,11 @@ const About = () => {
           />
           
           {/* Stats Overlay */}
-          <div className="absolute bottom-6 left-150 -translate-x-1/2 bg-white shadow-md rounded-lg flex gap-8 px-8 py-8 w-[90%] md:w-[80%] justify-around border-2 border-blue-900">
+          <div className="lg:absolute bottom-6 lg:mt-0 mt-12 lg:left-150 lg:-translate-x-1/2 bg-white shadow-md rounded-lg flex gap-8 px-8 py-8 lg:w-[90%] lg:md:w-[80%] justify-around border-2 border-blue-900">
             <div className="text-center">
               <h4 className="common-text font-bold text-4xl inter-text">250+</h4>
               <p className="text-gray-600 text-sm">Verified Discounts</p>
-              <div class="w-[2px] h-24 common-bg top-3 left-42 absolute"></div> 
+              <div className="w-[2px] h-24 common-bg top-3 left-42 absolute"></div> 
             </div>
             <div className="text-center">
               <h4 className="common-text font-bold text-4xl inter-text">100K+</h4>
