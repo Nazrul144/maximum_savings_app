@@ -1,9 +1,10 @@
+import Header from '@/components/LandingPage/Header'
 import React from 'react'
 
 const HomePage = () => {
   return (
     <div>
-      Home Page
+      <Header/>
     </div>
   )
 }

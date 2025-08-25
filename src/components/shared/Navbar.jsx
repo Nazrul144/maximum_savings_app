@@ -6,7 +6,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
@@ -20,17 +19,9 @@ import { usePathname } from "next/navigation";
 
 // All routes and submenus here:
 
-
 const navItems = [
-  { 
-    title: "Home",
-    path: "/" 
-  },
-
-  { title: "How It Works",
-    path: "/work"
-  },
-
+  { title: "Home", path: "/" },
+  { title: "How It Works", path: "/work" },
   {
     title: "Discover Savings",
     items: [
@@ -46,9 +37,7 @@ const navItems = [
 ];
 
 export default function Navbar({ montserrat }) {
-
-  const patheName = usePathname();
-
+  const pathName = usePathname();
 
   return (
     <header className="border-b px-4 md:px-6 sticky top-0 z-50">
@@ -88,10 +77,9 @@ export default function Navbar({ montserrat }) {
             </PopoverTrigger>
             <PopoverContent align="start" className="w-64 p-1 md:hidden">
               <NavigationMenu className="max-w-none *:w-full">
-                {/*For Mobile Device*/}
+                {/* For Mobile Device */}
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
-                   {
-                  navItems.map((item, index) => (
+                  {navItems.map((item, index) => (
                     <NavigationMenuItem key={index} montserrat={montserrat.className}>
                       {item.items ? (
                         <Popover>
@@ -104,66 +92,71 @@ export default function Navbar({ montserrat }) {
                             <NavigationMenuList className="flex flex-col">
                               {item.items.map((submenu, subIndex) => (
                                 <NavigationMenuItem key={subIndex}>
-                                  <Link href={submenu.path} key={submenu.path}>{submenu.title}</Link>
+                                  <Link href={submenu.path} key={submenu.path}>
+                                    {submenu.title}
+                                  </Link>
                                 </NavigationMenuItem>
                               ))}
                             </NavigationMenuList>
                           </PopoverContent>
                         </Popover>
                       ) : (
-                        <NavigationMenuLink >
-                          <Link className={`${cn(montserrat)} ${item.path === patheName? 'text-[#00308F] font-bold underline' : ""}`} href={item.path} key={item.path}>
-                            {item.title}
-                          </Link>
-                        </NavigationMenuLink>
+                        <Link
+                          className={`${cn(montserrat)} ${item.path === pathName ? 'text-[#00308F] font-bold underline' : ''}`}
+                          href={item.path}
+                          key={item.path}
+                        >
+                          {item.title}
+                        </Link>
                       )}
                     </NavigationMenuItem>
-                  ))
-                }
-
+                  ))}
                 </NavigationMenuList>
-
               </NavigationMenu>
             </PopoverContent>
           </Popover>
 
           {/* Main nav */}
           <div className="flex items-center gap-6">
-            <Link href={"/"} className="text-3xl font-bold italic">Logo</Link>
+            <Link href={"/"} className="text-3xl font-bold italic">
+              Logo
+            </Link>
 
             {/* Navigation menu */}
             <NavigationMenu viewport={false} className="max-md:hidden">
               <NavigationMenuList className="gap-6">
-                {
-                  navItems.map((item, index) => (
-                    <NavigationMenuItem key={index} montserrat={montserrat.className}>
-                      {item.items ? (
-                        <Popover>
-                          <PopoverTrigger asChild>
-                            <NavigationMenuTrigger className={`${cn(montserrat)}`}>
-                              {item.title}
-                            </NavigationMenuTrigger>
-                          </PopoverTrigger>
-                          <PopoverContent className="w-48 p-2">
-                            <NavigationMenuList className="flex flex-col">
-                              {item.items.map((submenu, subIndex) => (
-                                <NavigationMenuItem key={subIndex}>
-                                  <Link href={submenu.path} key={submenu.path}>{submenu.title}</Link>
-                                </NavigationMenuItem>
-                              ))}
-                            </NavigationMenuList>
-                          </PopoverContent>
-                        </Popover>
-                      ) : (
-                        <NavigationMenuLink >
-                          <Link className={`${cn(montserrat)} ${item.path === patheName? 'text-[#00308F] font-bold underline' : ""}`} href={item.path} key={item.path}>
+                {navItems.map((item, index) => (
+                  <NavigationMenuItem key={index} montserrat={montserrat.className}>
+                    {item.items ? (
+                      <Popover>
+                        <PopoverTrigger asChild>
+                          <NavigationMenuTrigger className={`${cn(montserrat)}`}>
                             {item.title}
-                          </Link>
-                        </NavigationMenuLink>
-                      )}
-                    </NavigationMenuItem>
-                  ))
-                }
+                          </NavigationMenuTrigger>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-48 p-2">
+                          <NavigationMenuList className="flex flex-col">
+                            {item.items.map((submenu, subIndex) => (
+                              <NavigationMenuItem key={subIndex}>
+                                <Link href={submenu.path} key={submenu.path}>
+                                  {submenu.title}
+                                </Link>
+                              </NavigationMenuItem>
+                            ))}
+                          </NavigationMenuList>
+                        </PopoverContent>
+                      </Popover>
+                    ) : (
+                      <Link
+                        className={`${cn(montserrat)} ${item.path === pathName ? 'text-[#00308F] font-bold underline' : ''}`}
+                        href={item.path}
+                        key={item.path}
+                      >
+                        {item.title}
+                      </Link>
+                    )}
+                  </NavigationMenuItem>
+                ))}
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -175,7 +168,7 @@ export default function Navbar({ montserrat }) {
             asChild
             variant="ghost"
             size="sm"
-            className=" common-text border-1 border-[#00308F] px-6 py-5 font-semibold text-lg"
+            className="common-text border-1 border-[#00308F] px-6 py-5 font-semibold text-lg"
           >
             <Link href={"#"}>Log in</Link>
           </Button>
@@ -187,5 +180,3 @@ export default function Navbar({ montserrat }) {
     </header>
   );
 }
-
-

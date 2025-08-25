@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import NavHeader from "@/components/shared/NavHeader";
@@ -13,6 +13,12 @@ const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '700'], // You can specify the weights you need
 });
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], // You can specify the weights you need
+});
+
 
 
 const geistMono = Geist_Mono({
@@ -29,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} antialiased`}
       >
         <NavHeader />
         <Navbar montserrat={montserrat.className}/>
