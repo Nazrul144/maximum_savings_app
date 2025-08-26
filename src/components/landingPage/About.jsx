@@ -3,7 +3,6 @@ import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import { IoMdStar } from "react-icons/io";
 
-
 const About = () => {
   return (
     <section className="py-16 bg-white max-w-7xl mx-auto">
