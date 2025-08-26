@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": "./", // This is needed to resolve relative paths
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     }
   }
 }
