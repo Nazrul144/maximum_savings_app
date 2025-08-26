@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Faq = () => {
@@ -437,6 +438,12 @@ const Faq = () => {
       consequuntur distinctio corporis earum similique!
     </p>
   </details>
+</div>
+<h1 className='text-center text-sm text-[#747474] mt-6 mb-6'>Still have more questions? Find answers in our help center.
+    <Link className='underline font-bold text-[#151515]' href={""}>help center</Link>
+</h1>
+<div className='flex justify-center'>
+    <Link className='common-bg text-white text-lg py-2 px-4 rounded-sm montserrat-text font-semibold hover:scale-105 transition-all duration-300' href={""}>Click Here To Submit Your Offer</Link>
 </div>
     </div>
   )
