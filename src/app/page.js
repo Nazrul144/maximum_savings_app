@@ -1,5 +1,6 @@
 import About from "@/components/LandingPage/About";
 import EmailSubscription from "@/components/LandingPage/EmailSubscription";
+import Faq from "@/components/LandingPage/Faq";
 import Header from "@/components/LandingPage/Header";
 import LatestNews from "@/components/LandingPage/LatestNews";
 import Subscription from "@/components/LandingPage/Subscription";
@@ -15,6 +16,7 @@ export default function Home() {
       <Subscription/>
       <LatestNews/>
       <EmailSubscription/>
+      <Faq/>
     </div>
   );
 }
