@@ -16,6 +16,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.pinyon-text {
+  font-family: 'Pinyon Script', cursive;
+}
+.bills-text {
+  font-family: 'Post No Bills Jaffna SemiBold', cursive;
+}
+
 
 
 @custom-variant dark (&:is(.dark *));
