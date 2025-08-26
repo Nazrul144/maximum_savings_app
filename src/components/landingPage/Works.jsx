@@ -1,7 +1,5 @@
 import React from 'react'
 import { ClipboardList, Smartphone, Wallet } from "lucide-react"; // icons
-
-
 const Works = () => {
   return (
     <section className="mb-10 mt-10 bg-white text-center max-w-7xl mx-auto">
