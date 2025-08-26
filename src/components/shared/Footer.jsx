@@ -9,7 +9,7 @@ const Footer = () => {
   const id = useId()
 
   return (
-   <div className='mt-16 common-bg'>
+   <div className='mt-24 common-bg'>
       <div className='grid lg:grid-cols-5 ml-12 lg:ml-0 lg:px-44 text-[#FAFAFA]'>
         {/*Column-1*/}
           <div className='mt-10 '>
