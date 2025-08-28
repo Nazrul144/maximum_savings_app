@@ -169,10 +169,10 @@ export default function Navbar({ montserrat }) {
             size="sm"
             className="common-text border-1 border-[#00308F] px-6 py-5 font-semibold text-lg"
           >
-            <Link href={"#"}>Log in</Link>
+            <Link href='/login'>Log in</Link>
           </Button>
           <Button asChild size="sm" className="font-semibold common-bg px-6 py-5 text-lg">
-            <Link href={"#"}>Sign Up</Link>
+            <Link href='/register'>Sign Up</Link>
           </Button>
         </div>
       </div>
