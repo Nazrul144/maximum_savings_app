@@ -1,9 +1,10 @@
+import Register from '@/components/authentication/Register'
 import React from 'react'
 
 const RegisterPage = () => {
   return (
     <div>
-      <h1>This is register page</h1>
+      <Register/>
     </div>
   )
 }
