@@ -1,9 +1,12 @@
+import Header from '@/components/addYourBusiness/Header'
+import Partner from '@/components/addYourBusiness/Partner'
 import React from 'react'
 
 const BusinessPage = () => {
   return (
     <div>
-      <h1>Add Your bussiness</h1>
+      <Header/>
+      <Partner/>
     </div>
   )
 }
