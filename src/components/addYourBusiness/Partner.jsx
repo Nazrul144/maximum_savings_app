@@ -13,7 +13,7 @@ const Partner = () => {
             <div className='grid lg:grid-cols-2 gap-10 mt-8'>
             {
                 cardData?.map((card)=>(
-                    <div className='lg:w-[633px] h-[233px] rounded-lg border-b-4 border-[#00308F] shadow-xl'>
+                    <div key={card.title} className='lg:w-[633px] h-[233px] rounded-lg border-b-4 border-[#00308F] shadow-xl'>
                         <h3 className='text-center common-text font-bold text-4xl inter-text mt-16'>{card.title}</h3>
                         <h3 className='text-center px-25 mt-2'>{card.description}</h3>
                     </div>
