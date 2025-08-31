@@ -10,10 +10,10 @@ const Partner = () => {
             <div className='flex justify-center items-center mt-6'>
                 <Button className='common-bg montserrat-text text-lg cursor-pointer'>Click Here To Submit Your Offer</Button>
             </div>
-            <div className='grid lg:grid-cols-2 gap-10 mt-8'>
+            <div className='grid lg:grid-cols-2 gap-6 mt-8'>
             {
                 cardData?.map((card)=>(
-                    <div key={card.title} className='lg:w-[633px] h-[233px] rounded-lg border-b-4 border-[#00308F] shadow-xl'>
+                    <div key={card.title} className='lg:w-[633px] h-[233px] rounded-lg border border-b-4 border-b-[#00308F] shadow-xl'>
                         <h3 className='text-center common-text font-bold text-4xl inter-text mt-16'>{card.title}</h3>
                         <h3 className='text-center px-25 mt-2'>{card.description}</h3>
                     </div>
