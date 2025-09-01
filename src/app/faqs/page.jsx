@@ -1,9 +1,10 @@
+import SubmitForm from '@/components/addYourBusiness/SubmitForm'
 import React from 'react'
 
 const FAQSPage = () => {
   return (
     <div>
-      FAQS Page
+      <SubmitForm/>
     </div>
   )
 }
