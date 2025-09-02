@@ -23,7 +23,7 @@ const Login = () => {
       <div className="absolute inset-0 grid place-items-center ml-14">
         <h1 className="z-10 text-3xl font-bold text-white drop-shadow-lg">
           Welcome To MaximumSavings
-         <hr className="border-t-1 border-[#7BB662] w-72 mt-2" />
+         <hr className="border-t-1 border-[#7BB662] w-66 mt-2" />
         </h1>
         
       </div>
@@ -35,7 +35,7 @@ const Login = () => {
             {/*Login form div*/}
             <div className='h-[600px] w-96 '>
               <div className="w-full max-w-md p-8 space-y-3   text-gray-100 h-full ">
-	<h1 className=" montserrat-text text-center common-text text-5xl font-bold">Login</h1>
+	<h1 className=" montserrat-text text-center common-text text-5xl font-bold mb-10">Login</h1>
 	<form noValidate="" action="" className="space-y-6">
 		  <div className="relative w-80">
       {/* Label on border */}
@@ -82,7 +82,7 @@ const Login = () => {
 	</form>
 	
 	<p className="text-xs text-center sm:px-6 text-gray-800">Don't have an account?
-		<Link href={"/register"} className="underline font-bold montserrat-text common-text"> Sign up</Link>
+		<Link href={"/register"} className="underline font-bold montserrat-text common-text">Sign up</Link>
 	</p>
 </div>
             </div>
