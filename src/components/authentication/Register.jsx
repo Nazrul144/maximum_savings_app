@@ -134,7 +134,7 @@ const Register = () => {
 
 
         </div>
-		<Button className="block w-full text-center rounded-sm text-white bg-[#00308F] text-xl h-12 cursor-pointer">Continue</Button>
+		<Link href={'/register2'} className="block w-full text-center rounded-sm text-white bg-[#00308F] text-xl py-3 cursor-pointer">Continue</Link>
 	
 	</form>
 	
