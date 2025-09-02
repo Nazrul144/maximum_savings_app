@@ -26,7 +26,7 @@ const Register4 = () => {
                 <h3 className='text-center text-lg mt-2 montserrat-text mb-6'>Check your inbox at <span className='font-bold'>alishuvo143@gmail.com</span> and click the link in <br /> the email to verify your account.</h3>
                                <div className="justify-center lg:mt-0 mt-5 lg:mb-0 mb-6 lg:right-20 bottom-16 flex items-center">
   <Link
-    href={'/register3'}
+    href={'#'}
     className="common-bg py-2.5 px-5 rounded-lg text-white w-56 h-12 flex items-center justify-center gap-1"
   >
     {/* Icon first, then text */}

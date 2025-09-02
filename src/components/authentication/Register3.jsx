@@ -56,7 +56,7 @@ const Register3 = () => {
         className="w-full h-12 border border-blue-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
       />
     </div>
-    		<Link href={''} className="block w-full text-xl font-semibold text-center  text-white bg-[#00308F]  py-3 cursor-pointer mt-8 mb-6">Create Account</Link>
+    		<Link href={'/register4'} className="block w-full text-xl font-semibold text-center  text-white bg-[#00308F]  py-3 cursor-pointer mt-8 mb-6">Create Account</Link>
         
      </div>
            </div>
