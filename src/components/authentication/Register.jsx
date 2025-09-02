@@ -20,11 +20,9 @@ const Register = () => {
       />
 
       {/* Centered overlay */}
-      <div className="absolute inset-0 grid place-items-center ml-14">
-        <h1 className="z-10 text-3xl font-bold text-white drop-shadow-lg">
-          Welcome To MaximumSavings
-         <hr className="border-t-1 border-[#7BB662] w-72 mt-2" />
-        </h1>
+      <div className="absolute mt-48 grid place-items-center ">
+        <h1 className="z-10 text-3xl font-bold text-white drop-shadow-lg">Create your account</h1>
+        <h3 className='text-white mt-4 text-center'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
         
       </div>
         <h4 className='text-white absolute bottom-4 text-sm left-12'>Log in to your<span className='font-bold'>MaximumSavings</span> account.</h4>
@@ -141,7 +139,7 @@ const Register = () => {
 	</form>
 	
 	<p className="text-xs text-center sm:px-6 text-gray-800">Already have an account?
-		<Link href={"/login"} className="underline font-bold"> Sign up</Link>
+		<Link href={"/login"} className="underline font-bold common-text montserrat-text"> Log in</Link>
 	</p>
 </div>
             </div>
