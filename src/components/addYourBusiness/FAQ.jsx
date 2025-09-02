@@ -185,7 +185,7 @@ const FAQ = () => {
 </div>
 
 <div className='flex justify-center mt-20'>
-    <Link className='common-bg text-white text-lg py-2 px-4 rounded-sm montserrat-text font-semibold hover:scale-105 transition-all duration-300' href={""}>Click Here To Submit Your Offer</Link>
+    <Link href={'/submit_form'} className='common-bg text-white text-lg py-2 px-4 rounded-sm montserrat-text font-semibold hover:scale-105 transition-all duration-300'>Click Here To Submit Your Offer</Link>
 </div>
     </div>
     </div>

@@ -7,7 +7,6 @@ import { useId } from "react"
 import { Textarea } from "@/components/ui/textarea"
 import { useFileUpload } from "@/hooks/use-file-upload"
 import { Button } from '../ui/button'
-import { CircleUserRoundIcon, XIcon } from "lucide-react"
 
 const SubmitForm = () => {
     const id = useId()
@@ -46,8 +45,8 @@ const SubmitForm = () => {
       </div>
         </div>
         {/*Submit Form*/}
-        <div className='w-full  md:h-96 lg:w-[886px] lg:h-[1616px]  mx-auto lg:shadow-2xl'>
-            <h1 className='text-center font-bold text-inter text-4xl pt-16 pb-12'>Submit A Request</h1>
+        <div className='w-full  md:h-96 lg:w-[886px] lg:h-[1616px]  mx-auto lg:shadow-2xl rounded-sm'>
+            <h1 className='text-center font-bold text-inter text-4xl pt-16 pb-12 common-text'>Submit A Request</h1>
                 <form onSubmit={handleSubmit} className=' px-4 lg:px-16'>
                     <div className='mb-4'>
                     <Label htmlFor="email">Business Name</Label>

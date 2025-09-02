@@ -1,12 +1,12 @@
 import SubmitForm from '@/components/addYourBusiness/SubmitForm'
 import React from 'react'
 
-const FAQSPage = () => {
+const SubmitFromPage = () => {
   return (
     <div>
-      <h1>This is FAQ Page</h1>
+      <SubmitForm/>
     </div>
   )
 }
 
-export default FAQSPage
+export default SubmitFromPage
