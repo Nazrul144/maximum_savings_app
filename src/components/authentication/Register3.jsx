@@ -46,7 +46,7 @@ const Register3 = () => {
         htmlFor="email"
         className="absolute -top-2 left-3 bg-white px-1 text-sm text-gray-600"
       >
-        Email Address
+        Password
       </label>
 
       {/* Input box */}

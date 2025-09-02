@@ -1,12 +1,12 @@
 
-import Register3 from '@/components/authentication/Register3'
+import Register4 from '@/components/authentication/Register4'
 import React from 'react'
 
 const FAQSPage = () => {
   return (
     <div>
       <h1>This is FAQ Page</h1>
-      <Register3/>
+      <Register4/>
     </div>
   )
 }
