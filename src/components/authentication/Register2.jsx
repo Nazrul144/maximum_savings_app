@@ -12,7 +12,7 @@ const Register2 = () => {
   return (
     <div>
         <div className='lg:w-[803px] lg:h-[516px] mx-auto mt-14 lg:shadow-2xl relative'>
-                <div className='w-[820px] h-[50px]'>
+                <div className='lg:w-[820px] h-[50px]'>
                     <Image 
                         src={'/register2.png'}
                           width={802}
@@ -42,7 +42,7 @@ const Register2 = () => {
       </div>
     </RadioGroup>
                 </div>
-               <div className="absolute right-20 bottom-16 flex items-center">
+               <div className="lg:absolute justify-center lg:mt-0 mt-5 lg:mb-0 mb-6 lg:right-20 bottom-16 flex items-center">
   <Link
     href=""
     className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
@@ -53,7 +53,7 @@ const Register2 = () => {
   </Link>
 </div>
         </div>
- <hr className='border-blue-800 border-[3px] w-[802px] mx-auto ' />
+ <hr className='border-blue-800 border-[3px] lg:w-[802px] mx-auto ' />
     </div>
   )
 }
