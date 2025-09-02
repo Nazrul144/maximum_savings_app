@@ -37,13 +37,39 @@ const Login = () => {
               <div className="w-full max-w-md p-8 space-y-3   text-gray-100 h-full ">
 	<h1 className=" montserrat-text text-center common-text text-5xl font-bold">Login</h1>
 	<form noValidate="" action="" className="space-y-6">
+		  <div className="relative w-80">
+      {/* Label on border */}
+      <label
+        htmlFor="email"
+        className="absolute -top-2 left-3 bg-white px-1 text-sm text-gray-600"
+      >
+        Email Address
+      </label>
+
+      {/* Input box */}
+      <input
+        type="email"
+        id="email"
+        className="w-full h-12 rounded-md border border-blue-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+      />
+    </div>
 		<div className="space-y-1 text-sm">
-			<label htmlFor="username" className="block text-gray-400">Email Address</label>
-			<input type="text" name="username" id="username" placeholder="Enter your email" className="w-full px-4 py-3 rounded-md border-1 border-[#00308F] bg-transparent text-gray-100 " />
-		</div>
-		<div className="space-y-1 text-sm">
-			<label htmlFor="password" className="block text-gray-400">Password</label>
-			<input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-1 border-[#00308F] bg-transparent text-gray-100 focus:border-violet-400" />
+			  <div className="relative w-80">
+      {/* Label on border */}
+      <label
+        htmlFor="email"
+        className="absolute -top-2 left-3 bg-white px-1 text-sm text-gray-600"
+      >
+        Password
+      </label>
+
+      {/* Input box */}
+      <input
+        type="email"
+        id="email"
+        className="w-full h-12 rounded-md border border-blue-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+      />
+    </div>
 			<div className="flex justify-end text-xs text-gray-400">
 				<a rel="noopener noreferrer" href="#">Forgot Password?</a>
 			</div>
@@ -56,7 +82,7 @@ const Login = () => {
 	</form>
 	
 	<p className="text-xs text-center sm:px-6 text-gray-800">Don't have an account?
-		<Link rel="noopener noreferrer" href="#" className="underline font-bold"> Sign up</Link>
+		<Link href={"/register"} className="underline font-bold"> Sign up</Link>
 	</p>
 </div>
             </div>
