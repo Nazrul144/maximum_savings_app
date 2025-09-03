@@ -82,7 +82,7 @@ const Register6 = () => {
 
 
 
-        <div className="lg:absolute justify-center mt-4 lg:right-20  flex items-center">
+        <div className="lg:absolute justify-center mt-4 lg:right-20  flex items-center mb-8 lg:mb-0">
           <Link
             href={"/register3"}
             className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-11 flex items-center justify-center gap-1"
