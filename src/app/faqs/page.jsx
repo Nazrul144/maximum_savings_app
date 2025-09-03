@@ -1,13 +1,10 @@
 
-
-import Register7 from '@/components/authentication/Register7'
 import React from 'react'
 
 const FAQSPage = () => {
   return (
     <div>
       <h1>This is FAQ Page</h1>
-      <Register7/>
     </div>
   )
 }
