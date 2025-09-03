@@ -212,7 +212,7 @@ const Register5 = () => {
         </div>
       </div>
 
-      <hr className="border-blue-800 border-[3px] lg:w-[802px] mx-auto mt-6" />
+      <hr className="border-blue-800 border-[3px] lg:w-[802px] mx-auto" />
     </div>
   );
 };
