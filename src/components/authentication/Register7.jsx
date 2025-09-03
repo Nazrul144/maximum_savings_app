@@ -107,12 +107,12 @@ const Register7 = () => {
                 variant="outline"
                 className="py-5 px-6 text-lg common-text border-2 border-blue-800 cursor-pointer"
               >
-                Back
+                <Link href={'/register6'}>Back</Link>
               </Button>
             </div>
             <div>
               <Link
-                href={"/register3"}
+                href={"/register8"}
                 className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
               >
                 <span className="text-lg font-semibold">Next</span>
