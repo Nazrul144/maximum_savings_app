@@ -7,10 +7,10 @@ import { useId } from "react"
 import { Textarea } from "@/components/ui/textarea"
 import { useFileUpload } from "@/hooks/use-file-upload"
 import { Button } from '../ui/button'
+import { XIcon } from 'lucide-react'
 
 const SubmitForm = () => {
     const id = useId()
-
      const [{ files }, { removeFile, openFileDialog, getInputProps }] =
     useFileUpload({
       accept: "image/*",

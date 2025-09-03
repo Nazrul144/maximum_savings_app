@@ -1,7 +1,7 @@
 import Register5 from '@/components/authentication/Register5'
 import React from 'react'
 
-const Register5Page = () => {
+const Register = () => {
   return (
     <div>
       <Register5/>
@@ -9,5 +9,4 @@ const Register5Page = () => {
   )
 }
 
-export default Register5Page
-<Register5/>
+export default Register

@@ -46,13 +46,13 @@ const Register5 = () => {
         </h3>
 
         {/* Form */}
-        <div className="w-2xl mx-auto border-2 p-4">
+        <div className="lg:w-2xl mx-auto p-4">
           <Label className="text-sm font-bold common-text" htmlFor="employment">
             EMPLOYMENT STATUS
           </Label>
           <br />
           <Button
-            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3"
+            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3 cursor-pointer"
             variant="outline"
           >
             Emergency Service
@@ -69,7 +69,7 @@ const Register5 = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
-                  className="w-[640px] flex justify-between h-15 bg-[#F0F0F0] text-black"
+                  className=" w-full lg:w-[640px] flex justify-between h-15 bg-[#F0F0F0] text-black"
                   variant="outline"
                 >
                   {selectedOrganization}
@@ -127,31 +127,31 @@ const Register5 = () => {
                 align="start"
               >
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("Ambulance Service")}
                 >
                   Ambulance Service
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("Fire Service")}
                 >
                   Fire Service
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("HM Coastguard")}
                 >
                   HM Coastguard
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("Independent Lifeboats")}
                 >
                   Independent Lifeboats
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("NHS")}
                 >
                   NHS
@@ -163,19 +163,19 @@ const Register5 = () => {
                   Police
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("Red Cross")}
                 >
                   Red Cross
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("RNLI")}
                 >
                   RNLI
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="w-[630px]"
+                  className="lg:w-[630px]"
                   onClick={() => setSelectedEmployer("Search and Rescue")}
                 >
                   Search and Rescue
@@ -186,14 +186,14 @@ const Register5 = () => {
 
           {/*Button*/}
           <Button
-            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3"
+            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3 cursor-pointer"
             variant="outline"
           >
             Employed
             <IoArrowForwardSharp size={30} />
           </Button>
           <Button
-            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3"
+            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3 cursor-pointer"
             variant="outline"
           >
             Retired
@@ -201,7 +201,7 @@ const Register5 = () => {
           </Button>
           <div className="lg:absolute justify-center lg:mt-0 mt-5 lg:mb-0 mb-6 lg:right-20 bottom-16 flex items-center">
             <Link
-              href={"/register3"}
+              href={"/register6"}
               className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
             >
               {/* Icon first, then text */}
