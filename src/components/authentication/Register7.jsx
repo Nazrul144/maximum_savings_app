@@ -13,19 +13,14 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { Input } from "../ui/input";
 
 const Register7 = () => {
-  const [selectedOrganization, setSelectedOrganization] = useState(
-    "Select your organization"
-  );
-
-  const [selectedEmployer, setSelectedEmployer] = useState(
-    "Select Your Employer"
-  );
+  const [selectedOrganization, setSelectedOrganization] = useState("Country");
 
   return (
     <div>
-      <div className="lg:w-[803px] lg:h-[961px] mx-auto mt-14 lg:shadow-2xl relative">
+      <div className="lg:w-[803px] lg:h-[761px] mx-auto mt-14 lg:shadow-2xl relative">
         <div className="lg:w-[820px] h-[50px]">
           <Image
             src={"/register2.png"}
@@ -41,25 +36,32 @@ const Register7 = () => {
           Delivery Address
         </h1>
         <h3 className="text-center text-lg montserrat-text mb-6">
-          We'll send your membership card here, check to make sure it's <br /> correct.
+          We'll send your membership card here, check to make sure it's <br />{" "}
+          correct.
         </h3>
 
         {/* Form */}
         <div className="lg:w-2xl mx-auto p-4">
-          <Button
-            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3 cursor-pointer"
-            variant="outline"
-          >
-            Address line 1
-          </Button>
-
-          <Label className="text-sm font-bold common-text mb-3" htmlFor="job">
-            JOB DETAILS
-          </Label>
+          <Input
+            className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
+            type="email"
+            placeholder="Address line 1"
+          />{" "}
           <br />
-
+          <Input
+            className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
+            type="email"
+            placeholder="Address line 2 (Optional)"
+          />{" "}
+          <br />
+          <Input
+            className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
+            type="email"
+            placeholder="Town/City"
+          />{" "}
+          <br />
           {/* Organization Dropdown */}
-          <div className="mt-3">
+          <div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
@@ -75,133 +77,46 @@ const Register7 = () => {
                 side="bottom"
                 align="start"
               >
-                <DropdownMenuItem
-                  className="w-[630px] "
-                  onClick={() => setSelectedOrganization("Ambulance Service")}
-                >
-                  Ambulance Service
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className=" w-[630px]"
-                  onClick={() => setSelectedOrganization("APHA")}
-                >
-                  APHA
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className=" w-[600px]"
-                  onClick={() => setSelectedOrganization("Blood Bikes")}
-                >
-                  Blood Bikes
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className=" w-[630px]"
-                  onClick={() => setSelectedOrganization("Dental Practice")}
-                >
-                  Dental Practice
-                </DropdownMenuItem>
+                {countries?.map((country) => (
+                  <DropdownMenuItem
+                    key={country}
+                    className="w-[630px]"
+                    onClick={() => setSelectedOrganization(country)}
+                  >
+                    {country}
+                  </DropdownMenuItem>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-
-          {/* Employer Dropdown */}
-          <div className="mt-3">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+          <br />
+          <Input
+            className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
+            type="email"
+            placeholder="Postcode"
+          />
+          {/*Back and Next Button*/}
+          <div className="flex justify-between items-center mt-12">
+            <div>
+              <div>
                 <Button
-                  className="w-full flex justify-between h-15 bg-[#F0F0F0]"
                   variant="outline"
+                  className="py-5 px-6 text-lg common-text border-2 border-blue-800 cursor-pointer"
                 >
-                  {selectedEmployer}
-                  <ChevronDownIcon className="-me-1 opacity-60" size={16} />
+                  Back
                 </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent
-                className="w-full py-2"
-                side="bottom"
-                align="start"
+              </div>
+            </div>
+            <div>
+              <Link
+                href={"/register3"}
+                className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
               >
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("Ambulance Service")}
-                >
-                  Ambulance Service
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("Fire Service")}
-                >
-                  Fire Service
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("HM Coastguard")}
-                >
-                  HM Coastguard
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("Independent Lifeboats")}
-                >
-                  Independent Lifeboats
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("NHS")}
-                >
-                  NHS
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="w-[630px]"
-                  onClick={() => setSelectedEmployer("Police")}
-                >
-                  Police
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("Red Cross")}
-                >
-                  Red Cross
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("RNLI")}
-                >
-                  RNLI
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="lg:w-[630px]"
-                  onClick={() => setSelectedEmployer("Search and Rescue")}
-                >
-                  Search and Rescue
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-
-          {/*Button*/}
-          <Button
-            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3 cursor-pointer"
-            variant="outline"
-          >
-            Employed
-            <IoArrowForwardSharp size={30} />
-          </Button>
-          <Button
-            className="w-full h-15 flex justify-between items-center bg-[#F0F0F0] text-sm mt-3 mb-3 cursor-pointer"
-            variant="outline"
-          >
-            Retired
-            <IoArrowForwardSharp size={30} />
-          </Button>
-          <div className="lg:absolute justify-center lg:mt-0 mt-5 lg:mb-0 mb-6 lg:right-20 bottom-16 flex items-center">
-            <Link
-              href={"/register6"}
-              className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
-            >
-              {/* Icon first, then text */}
-              <span className="text-lg font-semibold">Next</span>
-              <MdKeyboardDoubleArrowRight className="text-2xl mt-1" />
-            </Link>
+                {/* Icon first, then text */}
+                <span className="text-lg font-semibold">Next</span>
+                <MdKeyboardDoubleArrowRight className="text-2xl mt-1" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -212,3 +127,13 @@ const Register7 = () => {
 };
 
 export default Register7;
+
+// countries.js
+export const countries = [
+  "Afghanistan",
+  "Albania",
+  "Algeria",
+  "Andorra",
+  "Angola",
+  // ... all countries
+];
