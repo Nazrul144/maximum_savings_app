@@ -1,15 +1,13 @@
-
-import Register4 from '@/components/authentication/Register4'
 import Register5 from '@/components/authentication/Register5'
 import React from 'react'
 
-const FAQSPage = () => {
+const Register5Page = () => {
   return (
     <div>
-      <h1>This is FAQ Page</h1>
       <Register5/>
     </div>
   )
 }
 
-export default FAQSPage
+export default Register5Page
+<Register5/>
