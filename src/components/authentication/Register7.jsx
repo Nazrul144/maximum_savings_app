@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { Label } from "@/components/ui/label";
 import { Button } from "../ui/button";
-import { IoArrowForwardSharp } from "react-icons/io5";
 import { ChevronDownIcon } from "lucide-react";
 import {
   DropdownMenu,
@@ -14,9 +12,12 @@ import {
 import Link from "next/link";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Input } from "../ui/input";
+import { countries } from "countries-list";
 
 const Register7 = () => {
   const [selectedOrganization, setSelectedOrganization] = useState("Country");
+
+  const countryNames = Object.values(countries).map((c) => c.name);
 
   return (
     <div>
@@ -26,9 +27,9 @@ const Register7 = () => {
             src={"/register2.png"}
             width={802}
             height={50}
-            objectFit="cover"
             priority
             alt="header_Image"
+            className="object-cover"
           />
         </div>
 
@@ -36,7 +37,7 @@ const Register7 = () => {
           Delivery Address
         </h1>
         <h3 className="text-center text-lg montserrat-text mb-6">
-          We'll send your membership card here, check to make sure it's <br />{" "}
+          We'll send your membership card here, check to make sure it's <br />
           correct.
         </h3>
 
@@ -44,28 +45,29 @@ const Register7 = () => {
         <div className="lg:w-2xl mx-auto p-4">
           <Input
             className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
-            type="email"
+            type="text"
             placeholder="Address line 1"
-          />{" "}
+          />
           <br />
           <Input
             className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
-            type="email"
+            type="text"
             placeholder="Address line 2 (Optional)"
-          />{" "}
+          />
           <br />
           <Input
             className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
-            type="email"
+            type="text"
             placeholder="Town/City"
-          />{" "}
+          />
           <br />
-          {/* Organization Dropdown */}
+
+          {/* Country Dropdown */}
           <div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
-                  className=" w-full lg:w-[640px] flex justify-between h-15 bg-[#F0F0F0] text-black"
+                  className="w-full lg:w-[640px] flex justify-between h-14 bg-[#F0F0F0] text-black"
                   variant="outline"
                 >
                   {selectedOrganization}
@@ -73,11 +75,12 @@ const Register7 = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent
-                className="w-full "
+                className="w-full max-h-60 overflow-y-auto"
                 side="bottom"
                 align="start"
+                sideOffset={4} // Ensures it always drops downward
               >
-                {countries?.map((country) => (
+                {countryNames?.map((country) => (
                   <DropdownMenuItem
                     key={country}
                     className="w-[630px]"
@@ -89,30 +92,29 @@ const Register7 = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
+
           <br />
           <Input
             className="h-14 !text-lg !text-black bg-[#F0F0F0] rounded-none placeholder:text-black"
-            type="email"
+            type="text"
             placeholder="Postcode"
           />
-          {/*Back and Next Button*/}
+
+          {/* Back and Next Button */}
           <div className="flex justify-between items-center mt-12">
             <div>
-              <div>
-                <Button
-                  variant="outline"
-                  className="py-5 px-6 text-lg common-text border-2 border-blue-800 cursor-pointer"
-                >
-                  Back
-                </Button>
-              </div>
+              <Button
+                variant="outline"
+                className="py-5 px-6 text-lg common-text border-2 border-blue-800 cursor-pointer"
+              >
+                Back
+              </Button>
             </div>
             <div>
               <Link
                 href={"/register3"}
                 className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
               >
-                {/* Icon first, then text */}
                 <span className="text-lg font-semibold">Next</span>
                 <MdKeyboardDoubleArrowRight className="text-2xl mt-1" />
               </Link>
@@ -127,13 +129,3 @@ const Register7 = () => {
 };
 
 export default Register7;
-
-// countries.js
-export const countries = [
-  "Afghanistan",
-  "Albania",
-  "Algeria",
-  "Andorra",
-  "Angola",
-  // ... all countries
-];
