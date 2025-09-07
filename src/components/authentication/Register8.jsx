@@ -45,7 +45,7 @@ const Register8 = () => {
             </div>
             <div>
               <Link
-                href={"/register8"}
+                href={"/register9"}
                 className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
               >
                 <span className="text-lg font-semibold">Start</span>
