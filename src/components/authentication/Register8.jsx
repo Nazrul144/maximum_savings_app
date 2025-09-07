@@ -1,16 +1,12 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { Button } from "../ui/button";
 import Link from "next/link";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { Input } from "../ui/input";
-import { countries } from "countries-list";
+
 
 const Register8 = () => {
-  const [selectedOrganization, setSelectedOrganization] = useState("Country");
 
-  const countryNames = Object.values(countries).map((c) => c.name);
 
   return (
     <div>
@@ -45,19 +41,14 @@ const Register8 = () => {
           {/* Back and Next Button */}
           <div className="flex justify-between items-center mt-12">
             <div>
-              <Button
-                variant="outline"
-                className="py-5 px-6 text-lg common-text border-2 border-blue-800 cursor-pointer"
-              >
-                <Link href={'/register6'}>Back</Link>
-              </Button>
+              
             </div>
             <div>
               <Link
                 href={"/register8"}
                 className="common-bg py-2.5 px-5 rounded-lg text-white w-28 h-12 flex items-center justify-center gap-1"
               >
-                <span className="text-lg font-semibold">Next</span>
+                <span className="text-lg font-semibold">Start</span>
                 <MdKeyboardDoubleArrowRight className="text-2xl mt-1" />
               </Link>
             </div>
