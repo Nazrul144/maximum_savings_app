@@ -9,6 +9,10 @@ import { countries } from "countries-list";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { Button } from "../ui/button";
 import { ChevronDownIcon } from "lucide-react";
+import { FaCcDiscover } from "react-icons/fa6";
+import { SiMastercard } from "react-icons/si";
+import { RiVisaFill } from "react-icons/ri";
+import { FaCcAmex } from "react-icons/fa6";
 
 const Register9 = () => {
 const [selectedOrganization, setSelectedOrganization] = useState("Country");
@@ -70,6 +74,12 @@ const [selectedOrganization, setSelectedOrganization] = useState("Country");
            <div className="w-[650px] mx-auto mt-8">
              <Label className='text-xl text-[#4F5B76] font-bold' htmlFor="card">Card Number</Label> <br />
             <Input className='mt-2' type="email" placeholder="Email" />
+            <div className="flex gap-4">
+                <FaCcDiscover />
+                <SiMastercard />
+                <RiVisaFill />
+                <FaCcAmex />
+            </div>
             <div>
                <div className="mt-8 grid grid-cols-2 gap-4">
              <div>
