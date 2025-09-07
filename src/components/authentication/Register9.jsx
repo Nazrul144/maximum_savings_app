@@ -71,10 +71,10 @@ const [selectedOrganization, setSelectedOrganization] = useState("Country");
             {/*Card input*/}
         </div>
 
-           <div className="w-[650px] mx-auto mt-8">
+           <div className="w-[650px] mx-auto mt-8 relative">
              <Label className='text-xl text-[#4F5B76] font-bold' htmlFor="card">Card Number</Label> <br />
-            <Input className='mt-2' type="email" placeholder="Email" />
-            <div className="flex gap-4">
+            <Input className='mt-2' type="email" placeholder="1234 1234 1234 1234" />
+            <div className="flex gap-4 absolute top-12 right-8">
                 <FaCcDiscover />
                 <SiMastercard />
                 <RiVisaFill />
