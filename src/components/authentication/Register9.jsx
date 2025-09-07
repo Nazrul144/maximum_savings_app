@@ -87,7 +87,7 @@ const [selectedOrganization, setSelectedOrganization] = useState("Country");
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
-                  className="w-full lg:w-[315px] flex justify-between h-10 bg-[#F0F0F0] text-black"
+                  className="w-full lg:w-[315px] flex justify-between h-9 mt-2 bg-[#F0F0F0] text-black"
                   variant="outline"
                 >
                   {selectedOrganization}
