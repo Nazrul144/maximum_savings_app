@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const BrowseCategories = () => {
@@ -6,9 +7,9 @@ const BrowseCategories = () => {
        <div className="pt-22 flex flex-col items-center justify-center gap-8">
             <h1 className={`text-[#00308F] font-medium md:font-bold text-5xl text-center inter-text`}>Browse Categories</h1>
             <div className="flex flex-col items-center justify-center">
-                <p className={`text-[#000000] text-center ${montSerrat.className}`}>Must see offers from some of Blue Light Card
+                <p className={`text-[#000000] text-center montserrat-text`}>Must see offers from some of Blue Light Card
                     members' best-loved</p>
-                <p className={`text-[#000000] text-center ${montSerrat.className}`}>Fashion & Clothing partners.</p>
+                <p className={`text-[#000000] text-center montserrat-text`}>Fashion & Clothing partners.</p>
             </div>
 
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
