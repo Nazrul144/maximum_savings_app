@@ -9,6 +9,7 @@ import Works from "@/components/LandingPage/Works";
 import BrowseCategories from "@/components/UserLandingPage/BrowseCategories";
 import Fasion from "@/components/UserLandingPage/Fasion";
 import Hero from "@/components/UserLandingPage/Hero";
+import Travel from "@/components/UserLandingPage/Travel";
 import { useState } from "react";
 
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero/>
         <BrowseCategories/>
         <Fasion/>
+        <Travel/>
       </div>
     )
   }
