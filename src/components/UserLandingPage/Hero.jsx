@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
@@ -17,25 +19,31 @@ const Hero = () => {
         {/*Overlay*/}
         <div className="absolute flex flex-col items-center justify-center gap-4 z-30">
           <h1
-            className={`text-[#FFFFFF] text-center font-extrabold text-5xl ${interFont.className}`}
+            className={`text-[#FFFFFF] text-center font-extrabold text-5xl inter-text`}
           >
             Welcome To Exclusive Discounts
           </h1>
           <h1
-            className={`text-[#FFFFFF] text-center font-extrabold text-5xl ${interFont.className}`}
+            className={`text-[#FFFFFF] text-center font-extrabold text-5xl inter-text`}
           >
             & Savings
           </h1>
           <p
-            className={`text-[#FFFFFF] text-center font-medium text-xl ${montSerrat.className}`}
+            className={`text-[#FFFFFF] text-center font-medium text-xl inter-text`}
           >
             Get access to curated deals across various categories
           </p>
-          <button
-            className={`ring-2 rounded-lg px-4 py-2 mt-4 ${montSerrat.className}`}
+          <Button
+            className={`
+    ring-2 ring-white 
+    rounded-lg px-4 py-2 mt-4 inter-text cursor-pointer
+    bg-transparent text-white
+    hover:bg-blue-500 hover:text-white
+    transition-colors duration-300 ease-in-out
+  `}
           >
             Discover savings
-          </button>
+          </Button>
         </div>
       </div>
 
