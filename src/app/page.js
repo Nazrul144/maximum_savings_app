@@ -7,6 +7,7 @@ import LatestNews from "@/components/LandingPage/LatestNews";
 import Subscription from "@/components/LandingPage/Subscription";
 import Works from "@/components/LandingPage/Works";
 import BrowseCategories from "@/components/UserLandingPage/BrowseCategories";
+import Fasion from "@/components/UserLandingPage/Fasion";
 import Hero from "@/components/UserLandingPage/Hero";
 import { useState } from "react";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <div>
         <Hero/>
         <BrowseCategories/>
+        <Fasion/>
       </div>
     )
   }
