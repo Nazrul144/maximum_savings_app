@@ -6,6 +6,7 @@ import Header from "@/components/LandingPage/Header";
 import LatestNews from "@/components/LandingPage/LatestNews";
 import Subscription from "@/components/LandingPage/Subscription";
 import Works from "@/components/LandingPage/Works";
+import BrowseCategories from "@/components/UserLandingPage/BrowseCategories";
 import Hero from "@/components/UserLandingPage/Hero";
 import { useState } from "react";
 
@@ -16,7 +17,12 @@ export default function Home() {
   const [isLogin, setIsLogin] = useState(true)
 
   if(isLogin){
-    return <Hero/>
+    return (
+      <div>
+        <Hero/>
+        <BrowseCategories/>
+      </div>
+    )
   }
 
   return (
