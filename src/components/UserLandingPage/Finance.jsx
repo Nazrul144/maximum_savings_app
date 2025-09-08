@@ -1,13 +1,7 @@
 import React from 'react'
 import UserLandingPageCard from './UserLandingPageCard/UserLandingPageCard'
-import { Button } from '../ui/button'
-
-const Finance = () => {
-  return (
-    <div>
-      import React from 'react'
-import UserLandingPageCard from './UserLandingPageCard/UserLandingPageCard'
 import { Inter, Montserrat } from "next/font/google";
+import { Button } from '../ui/button';
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -21,7 +15,7 @@ const montSerrat = Montserrat({
 
 const Finance = () => {
   return (
-    <div>
+    <div className='mb-16'>
       <div className="flex flex-col items-center justify-center pt-24">
         <h1 className={`text-[#000000] font-bold text-5xl ${interFont.className}`}>Finance</h1>
 
@@ -61,12 +55,6 @@ const Finance = () => {
           View All {'>>'}
         </Button>
       </div>
-    </div>
-  )
-}
-
-export default Finance
-
     </div>
   )
 }

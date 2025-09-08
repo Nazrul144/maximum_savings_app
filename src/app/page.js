@@ -8,6 +8,7 @@ import Subscription from "@/components/LandingPage/Subscription";
 import Works from "@/components/LandingPage/Works";
 import BrowseCategories from "@/components/UserLandingPage/BrowseCategories";
 import Fasion from "@/components/UserLandingPage/Fasion";
+import Finance from "@/components/UserLandingPage/Finance";
 import Hero from "@/components/UserLandingPage/Hero";
 import HomeAndLifeStyle from "@/components/UserLandingPage/HomeAndLifeStyle";
 import Travel from "@/components/UserLandingPage/Travel";
@@ -27,6 +28,9 @@ export default function Home() {
         <Fasion/>
         <Travel/>
         <HomeAndLifeStyle/>
+        <Finance/>
+        <EmailSubscription/>
+        <Faq/>
       </div>
     )
   }
